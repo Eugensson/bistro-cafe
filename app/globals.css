@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+
+  --color-body: #e5e5e5;
+  --color-dark: #0a0909;
+  --color-grey: #777876;
+  --color-grey-100: #e4e4e3;
+  --color-accent: #fe7634;
+  --color-accent-hover: #f55304;
+
+  --bg-pattern: url("/assets/body-bg-pattern.png");
+  --bg-hero: url("/assets/hero/bg.png");
+  --bg-menu: url("/assets/menu/bg.png");
+  --bg-testimonial: url("/assets/testimonial/bg.png");
+  --bg-newsletter: url("/assets/newsletter/bg.png");
+  --bg-footer: url("/assets/footer/bg.png");
+
+  --font-primary: "Playfair Display";
+  --font-secondary: "Lato";
+}
+
+body {
+  @apply bg-body font-secondary text-lg text-grey font-medium;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @apply font-primary text-dark italic;
+}
+
+.h1 {
+  @apply text-6xl lg:text-8xl font-bold text-white;
+}
+
+.h2 {
+  @apply font-black text-[46px] mb-4 leading-[1.1];
+}
+
+.h3 {
+  @apply font-extrabold italic text-[40px];
+}
+
+.h4 {
+  @apply font-extrabold italic text-[26px] text-white;
+}
+
+.h5 {
+  @apply font-medium text-[22px] text-white;
+}
+
+.pretitle {
+  @apply font-secondary font-bold text-base uppercase tracking-[-0.04em] text-accent mb-2;
+}
+
+.btn {
+  @apply h-14 rounded-full bg-accent px-[42px] text-white text-base font-secondary font-semibold tracking-[0.02em] outline-none hover:bg-accent-hover transition-all duration-300 flex justify-center items-center;
+}
+
+.input {
+  @apply h-[56px] w-[316px] outline-none pl-[30px] rounded-full border-2 border-gray-200 font-secondary font-semibold text-base text-dark placeholder:text-dark;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background-color: transparent;
+  height: 48px;
+  width: 48px;
+  border: 2px solid #fe7634;
+  border-radius: 100%;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .control-prev.control-arrow:before,
+.carousel .control-next.control-arrow:before {
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+.carousel .control-prev.control-arrow:before {
+  background: url("/images/testimonial/arrow-left.svg") no-repeat;
+}
+
+.carousel .control-next.control-arrow:before {
+  background: url("/images/testimonial/arrow-right.svg") no-repeat;
+}
+
+.react-time-picker__wrapper {
+  border: none;
+}
+.react-time-picker__inputGroup__input {
+  outline: none;
+}
+
+.bg-pattern {
+  background-image: var(--bg-pattern);
+}
+
+.bg-hero {
+  background-image: var(--bg-hero);
+}
+
+.bg-menu {
+  background-image: var(--bg-menu);
+}
+
+.bg-testimonial {
+  background-image: var(--bg-testimonial);
+}
+
+.bg-newsletter {
+  background-image: var(--bg-newsletter);
+}
+
+.bg-footer {
+  background-image: var(--bg-footer);
+}
