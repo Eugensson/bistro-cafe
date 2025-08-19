@@ -101,3 +101,7 @@ body {
 .react-time-picker__inputGroup__input {
   outline: none;
 }
+
+.active {
+  @apply text-dark transition-colors duration-300;
+}

@@ -16,7 +16,7 @@ export const Reservation = () => {
   return (
     <section
       className="relative top-96 z-30 pb-20 lg:py-[100px]"
-      id="book a table"
+      id="book-a-table"
     >
       <div className="container">
         <motion.div

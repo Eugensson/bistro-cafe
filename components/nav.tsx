@@ -5,11 +5,7 @@ import { Link as ScrollLink, Events } from "react-scroll";
 
 import { NAV_LINKS } from "@/constants";
 
-interface NavProps {
-  spy?: boolean;
-}
-
-export const Nav = ({ spy }: NavProps) => {
+export const Nav = () => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -25,11 +21,12 @@ export const Nav = ({ spy }: NavProps) => {
     return (
       <nav className="w-full h-full">
         <ul className="h-full flex flex-col justify-center items-center gap-y-6">
-          {NAV_LINKS.map(({ label }) => (
+          {NAV_LINKS.map(({ id, label }) => (
             <li key={label}>
               <ScrollLink
-                to={label}
-                smooth
+                to={id}
+                spy={true}
+                smooth={true}
                 className="text-xl capitalize font-primary italic hover:text-dark transition-colors duration-300"
                 activeClass="active"
               >
@@ -44,12 +41,12 @@ export const Nav = ({ spy }: NavProps) => {
   return (
     <nav className="w-full h-full">
       <ul className="h-full flex flex-col justify-center items-center gap-y-6">
-        {NAV_LINKS.map(({ label }) => (
+        {NAV_LINKS.map(({ id, label }) => (
           <li key={label}>
             <ScrollLink
-              spy={spy}
-              to={label}
-              smooth
+              to={id}
+              spy={true}
+              smooth={true}
               className="text-xl capitalize font-primary italic hover:text-dark transition-colors duration-300"
               activeClass="active"
             >
