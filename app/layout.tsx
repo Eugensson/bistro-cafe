@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { Lato, Playfair_Display } from "next/font/google";
 
+import { Header } from "@/components/header";
+
 import "./globals.css";
 
 const lato = Lato({
@@ -35,6 +37,7 @@ export default function RootLayout({
       <body
         className={`${lato.variable} ${playfairDisplay.variable} antialiased`}
       >
+        <Header />
         {children}
         <Analytics />
       </body>
