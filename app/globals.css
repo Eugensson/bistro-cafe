@@ -14,13 +14,6 @@
   --color-accent: #fe7634;
   --color-accent-hover: #f55304;
 
-  --bg-pattern: url(/assets/body-bg-pattern.png);
-  --bg-hero: url(/assets/hero/bg.jpg);
-  --bg-menu: url(/assets/menu/bg.jpg);
-  --bg-testimonial: url(/assets/testimonial/bg.jpg);
-  --bg-newsletter: url(/assets/newsletter/bg.png);
-  --bg-footer: url(/assets/footer/bg.jpg);
-
   --font-primary: "Playfair Display";
   --font-secondary: "Lato";
 }
@@ -30,7 +23,7 @@ body {
 }
 
 .container {
-  @apply max-w-300 px-3.75 lg:px-0 mx-auto;
+  @apply max-w-300 px-3.75 mx-auto;
 }
 
 .h1,
@@ -71,13 +64,13 @@ body {
 }
 
 .input {
-  @apply h-14 w-79 outline-none pl-7.5 rounded-full border-2 border-gray-200 font-secondary font-semibold text-base text-dark placeholder:text-dark;
+  @apply h-14 w-79 outline-none pl-7.5 rounded-full bg-transparent text-white focus:ring-1 focus:ring-accent border border-white/20 placeholder:font-light placeholder:text-white/20 transition-all;
 }
 
 .carousel.carousel-slider .control-arrow {
   background-color: transparent;
-  height: 48px;
-  width: 48px;
+  height: 50px;
+  width: 50px;
   border: 2px solid #fe7634;
   border-radius: 100%;
   top: 30px;
@@ -94,11 +87,11 @@ body {
 }
 
 .carousel .control-prev.control-arrow:before {
-  background: url("/images/testimonial/arrow-left.svg") no-repeat;
+  background: url("/assets/testimonial/arrow-left.svg") no-repeat;
 }
 
 .carousel .control-next.control-arrow:before {
-  background: url("/images/testimonial/arrow-right.svg") no-repeat;
+  background: url("/assets/testimonial/arrow-right.svg") no-repeat;
 }
 
 .react-time-picker__wrapper {
@@ -107,28 +100,4 @@ body {
 
 .react-time-picker__inputGroup__input {
   outline: none;
-}
-
-.bg-pattern {
-  background-image: var(--bg-pattern);
-}
-
-.bg-hero {
-  background-image: var(--bg-hero);
-}
-
-.bg-menu {
-  background-image: var(--bg-menu);
-}
-
-.bg-testimonial {
-  background-image: var(--bg-testimonial);
-}
-
-.bg-newsletter {
-  background-image: var(--bg-newsletter);
-}
-
-.bg-footer {
-  background-image: var(--bg-footer);
 }

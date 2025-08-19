@@ -12,7 +12,7 @@ import { staggerContainer, fadeIn } from "@/lib/variants";
 export const Menu = () => {
   return (
     <section className="min-h-195">
-      <div className="absolute -z-0 w-full max-w-450 bg-menu h-195" />
+      <div className="absolute -z-0 w-full max-w-450 bg-[url(/assets/menu/bg.jpg)] h-195" />
       <div className="relative z-10 top-72 lg:top-52">
         <motion.div
           variants={staggerContainer(0.3, 1)}
