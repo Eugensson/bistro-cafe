@@ -25,8 +25,10 @@ export const TestimonialCarousel = ({ items }: TestimonialCarouselProps) => {
       className="w-full max-w-256 flex justify-center items-center"
     >
       {items.map(({ message, image, name, occupation }) => (
-        <div key={name} className="max-w-210 mx-auto px-24 text-white">
-          <p className="mb-9 text-lg lg:text-2xl leading-snug">{message}</p>
+        <div key={name} className="max-w-240 mx-auto px-14 md:px-24 text-white">
+          <p className="mb-9 min-h-27 text-sm md:text-lg lg:text-2xl leading-snug line-clamp-5">
+            {message}
+          </p>
           <div className="max-w-17.5 lg:max-w-25 mx-auto mb-3">
             <Image src={image} alt={`${name} image`} />
           </div>
