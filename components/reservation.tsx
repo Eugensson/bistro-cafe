@@ -55,7 +55,11 @@ export const Reservation = () => {
                 <FaUsers />
                 <span>How many people?</span>
               </div>
-              <input type="text" className="input" placeholder="1" />
+              <input
+                type="text"
+                className="h-14 w-79 outline-none pl-7.5 rounded-full border-1 border-gray-200 hover:border-accent-hover focus:border-accent-hover font-secondary font-semibold text-base text-dark placeholder:text-dark"
+                placeholder="1"
+              />
             </div>
           </div>
           <div className="max-w-79 flex justify-center mx-auto">

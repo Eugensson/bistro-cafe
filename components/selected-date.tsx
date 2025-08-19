@@ -3,6 +3,7 @@
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import { FaCalendar } from "react-icons/fa";
+
 import "react-datepicker/dist/react-datepicker.css";
 
 const SelectedDate = () => {
@@ -15,7 +16,7 @@ const SelectedDate = () => {
         <span>Choose Date</span>
       </div>
       <DatePicker
-        className="input"
+        className="h-14 w-79 outline-none pl-7.5 rounded-full border-1 border-gray-200 hover:border-accent-hover focus:border-accent-hover font-secondary font-semibold text-base text-dark placeholder:text-dark"
         selected={startDate}
         onChange={(date) => setStartDate(date as Date)}
       />
