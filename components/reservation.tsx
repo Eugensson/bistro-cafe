@@ -14,10 +14,7 @@ const SelectedTime = dynamic(() => import("./selected-time"), { ssr: false });
 
 export const Reservation = () => {
   return (
-    <section
-      className="relative top-96 z-30 pb-20 lg:py-[100px]"
-      id="book-a-table"
-    >
+    <section className="relative top-120 z-30 pb-20 lg:py-60" id="book-a-table">
       <div className="container">
         <motion.div
           variants={staggerContainer(0.3, 1)}
@@ -61,7 +58,7 @@ export const Reservation = () => {
               <input type="text" className="input" placeholder="1" />
             </div>
           </div>
-          <div className="max-w-[316px] flex justify-center mx-auto">
+          <div className="max-w-79 flex justify-center mx-auto">
             <button type="button" className="btn capitalize w-full lg:w-auto">
               Make a reservation
             </button>

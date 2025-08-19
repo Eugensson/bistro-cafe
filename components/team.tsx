@@ -10,7 +10,10 @@ import { fadeIn } from "@/lib/variants";
 
 export const Team = () => {
   return (
-    <section className="relative top-96 lg:top-120 min-h-180 z-10" id="team">
+    <section
+      className="relative top-96 lg:top-120 min-h-180 lg:pt-30 z-10"
+      id="team"
+    >
       <div className="container flex flex-col lg:flex-row items-center lg:items-start lg:gap-x-32">
         <motion.div
           variants={fadeIn("down", "tween", 0.6, 1.6)}

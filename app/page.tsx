@@ -16,7 +16,7 @@ const Home = () => {
       <Testimonial />
       <Reservation />
       <Footer />
-      <div className="h-95 md:h-92.5" />
+      <div className="h-95 md:h-92.5" id="contact" />
     </section>
   );
 };

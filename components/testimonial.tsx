@@ -15,7 +15,7 @@ import { TESTIMONIAL_DATA } from "@/constants";
 export const Testimonial = () => {
   return (
     <section
-      className="bg-[url(/assets/testimonial/bg.jpg)] bg-cover bg-no-repeat relative z-10 top-[340px] lg:top-[390px] h-[800px] pt-16 md:pt-32"
+      className="bg-[url(/assets/testimonial/bg.png)] bg-cover bg-no-repeat relative z-10 top-85 lg:top-120 h-200 pt-16 md:pt-32"
       id="testimonial"
     >
       <div className="container">
