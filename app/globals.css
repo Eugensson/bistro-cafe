@@ -67,31 +67,39 @@ body {
   @apply h-14 w-79 outline-none pl-7.5 rounded-full bg-transparent text-white focus:ring-1 focus:ring-accent border border-white/20 placeholder:font-light placeholder:text-white/20 transition-all;
 }
 
-.carousel.carousel-slider .control-arrow {
-  background-color: transparent;
-  height: 50px;
-  width: 50px;
-  border: 2px solid #fe7634;
-  border-radius: 100%;
-  top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.carousel .control-arrow {
+  background-color: transparent !important;
+  height: 50px !important;
+  width: 50px !important;
+  border: 2px solid #fe7634 !important;
+  border-radius: 50% !important;
+  top: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .carousel .control-prev.control-arrow:before,
 .carousel .control-next.control-arrow:before {
-  border: none;
-  width: 24px;
-  height: 24px;
+  border: none !important;
+  width: 24px !important;
+  height: 24px !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  content: "" !important;
 }
 
 .carousel .control-prev.control-arrow:before {
-  background: url("/assets/testimonial/arrow-left.svg") no-repeat;
+  background: url("/assets/testimonial/arrow-left.svg") no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
 }
 
 .carousel .control-next.control-arrow:before {
-  background: url("/assets/testimonial/arrow-right.svg") no-repeat;
+  background: url("/assets/testimonial/arrow-right.svg") no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
 }
 
 .react-time-picker__wrapper {
