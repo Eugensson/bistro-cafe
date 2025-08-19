@@ -9,7 +9,7 @@ import { plateVariants, fadeIn, staggerContainer } from "@/lib/variants";
 
 export const About = () => {
   return (
-    <section className="min-h-155">
+    <section className="min-h-155" id="about">
       <div className="container min-h-155">
         <motion.div
           variants={staggerContainer(0.3, 1)}

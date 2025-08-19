@@ -15,13 +15,13 @@ import Avatar2 from "@/public/assets/testimonial/avatar2.png";
 import Avatar3 from "@/public/assets/testimonial/avatar3.png";
 
 export const NAV_LINKS = [
-  { href: "/", label: "home" },
-  { href: "/", label: "about" },
-  { href: "/", label: "menu" },
-  { href: "/", label: "team" },
-  { href: "/", label: "testimonials" },
-  { href: "/", label: "book a table" },
-  { href: "/", label: "contact" },
+  { label: "home" },
+  { label: "about" },
+  { label: "menu" },
+  { label: "team" },
+  { label: "testimonial" },
+  { label: "book a table" },
+  { label: "contact" },
 ];
 
 export const SOCIAL_LINKS = [

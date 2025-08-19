@@ -9,7 +9,10 @@ import { fadeIn, staggerContainer } from "@/lib/variants";
 
 export const Footer = () => {
   return (
-    <footer className="relative top-96 z-20 pt-20 bg-dark lg:bg-transparent lg:bg-[url(/assets/footer/bg.jpg)] bg-center bg-no-repeat lg:min-h-155 lg:pt-32">
+    <footer
+      className="relative top-96 z-20 pt-20 bg-dark lg:bg-transparent lg:bg-[url(/assets/footer/bg.jpg)] bg-center bg-no-repeat lg:min-h-155 lg:pt-32"
+      id="contact"
+    >
       <div className="container h-full">
         <motion.div
           variants={staggerContainer(0.3, 1)}
