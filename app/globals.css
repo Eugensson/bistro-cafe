@@ -39,7 +39,7 @@ body {
 .h4,
 .h5,
 .h6 {
-  @apply font-primary text-dark italic;
+  @apply font-primary italic;
 }
 
 .h1 {
